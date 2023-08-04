@@ -5,6 +5,6 @@ export default function robots(){
             allow: '/',
             disallow: '/dashboard'
         },
-        sitemap: 'https://fizzante.com/sitemap.xml'
+        sitemap: 'https://fizzante.vercel.app/sitemap.xml'
     }
 }
