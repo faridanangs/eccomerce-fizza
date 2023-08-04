@@ -2,7 +2,12 @@ import { menu } from "@/data";
 import Link from "next/link";
 import React from "react";
 
-const MenuPage = () => {
+export const metadata = {
+  title: 'Menu',
+  description: "Ini halaman menu"
+}
+
+export default function MenuPage (){
   return (
     <div className="px-4 pt-2 lg:px-20 xl:px-40 h-[calc(100vh-6rem)] 
     md:h-[calc(100vh-9rem)] flex flex-col
@@ -24,5 +29,3 @@ const MenuPage = () => {
     </div>
   );
 };
-
-export default MenuPage;

@@ -1,4 +1,7 @@
-import React from 'react'
+export const metadata = {
+  title: "contact",
+  description: "Marriiir"
+}
 
 export default function Contact() {
   return (

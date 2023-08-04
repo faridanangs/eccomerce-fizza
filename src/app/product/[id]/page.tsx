@@ -3,6 +3,26 @@ import { singleProduct } from "@/data";
 import Image from "next/image";
 import React from "react";
 
+type Props = {
+  params: {
+    id: string
+  }
+}
+
+export function generateMetadata({params}:Props){
+  return {
+    title: singleProduct.title,
+    description: singleProduct.desc,
+    alternates: {
+      canonical: `product/${params.id}`,
+      languages: {
+        'en-US': `en-US/product/${params.id}`
+      }
+    }
+  }
+}
+
+
 const SingleProductPage = () => {
   return (
     <div className="p-4 lg:px-20 xl:px-40 h-screen flex flex-col gap-8 text-red-500 md:flex-row md:gap-8 md:items-center">
@@ -14,6 +34,8 @@ const SingleProductPage = () => {
             alt="img container product"
             className="object-contain"
             fill
+            quality={100}
+            priority
           />
         </div>
       )}

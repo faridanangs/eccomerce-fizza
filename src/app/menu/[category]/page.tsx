@@ -2,8 +2,24 @@ import { pizzas } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+type Props = {
+  params: { category: string }
+}
+export async function generateMetadata(
+  { params }: Props
+) {
+  // read route params
+  const id = params.category
+  return{
+    title: id,
+    description: 'Daftar Product'
+  }
 
-export default function CategoryPage() {
+}
+
+
+export default function CategoryPage({params}: Props) {
+
   return (
     <div className="flex flex-wrap text-fizza_text ">
       {pizzas.map((item) => (

@@ -48,6 +48,7 @@ export default function Slider() {
           alt="Slide-1"
           fill
           className="object-cover"
+          priority
         />
       </div>
     </div>

@@ -1,5 +1,6 @@
 export const metadata = {
-    title: "Orders"
+  title: 'Order',
+  description: 'Mari Belanja Di Fizzante',
 }
 
 import React from "react";
