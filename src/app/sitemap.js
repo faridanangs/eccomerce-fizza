@@ -1,5 +1,5 @@
 export default function sitemap() {
-    const baseUrl = 'https://fizzante.com'
+    const baseUrl = 'https://fizzante.vercel.app'
     return [
       {
         url: baseUrl,
