@@ -8,14 +8,14 @@ import { Metadata } from 'next'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://fizannte.com'),
+  metadataBase: new URL('https://fizzante.vercel.app'),
   title: {
     default: "Fizzante",
     template: "Fizzante | %s"
   },
   description: 'homi homi',
   verification: {
-    google: "google-site-verification=000000",
+    google: "google",
     yandex: "yandex"
     
   }
